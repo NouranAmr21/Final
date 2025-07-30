@@ -1,0 +1,211 @@
+
+    :root {
+      --primary-color: #B88E2F;
+      --light-bg: #FFF3E3;
+      --border-color: #e0e0e0;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+    
+    /* Header Styles */
+    .header {
+  background-image: url('cover.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+   #scrollUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  width: 55px;             /* Equal width & height */
+  height: 55px;
+  background: linear-gradient(135deg, #B88E2F, #f3e2e2);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;       /* Perfect circle */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;            /* Center icon inside */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#scrollUpBtn:hover {
+  transform: scale(1.2) rotate(10deg);
+  background: linear-gradient(135deg, #ddbd71, #d3bebe);
+}
+
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Product Comparison Styles */
+    .product-comparison-container {
+      padding: 3rem 0;
+    }
+    .info {
+  padding: 20px;
+  background-color: #FFF3E3;
+}
+
+
+.features {
+      margin-top: 50px;
+      padding: 30px 0;
+      background-color: #FFF3E3;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      margin-top: 60px; 
+    }
+
+.features i {
+      font-size: 24px;
+      color: #FFF3E3;
+    }
+    .product-header {
+      background-color: var(--light-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .product-card {
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s;
+      height: 100%;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .product-img {
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+    
+    .product-title {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .product-price {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1rem 0;
+    }
+    
+    .rating {
+      color: #FFC107;
+      margin-bottom: 1rem;
+    }
+    
+    .btn-primary-custom {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 0.5rem 1.5rem;
+      color: white;
+    }
+    
+    .btn-primary-custom:hover {
+      background-color: #9A7626;
+      color: white;
+    }
+    .comparison-table,
+.comparison-table th,
+.comparison-table td {
+  font-size: 24px !important;
+}
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 30px;
+      margin: 2rem 0;
+    }
+    
+    .comparison-table th {
+      background-color: var(--light-bg);
+      padding: 1rem;
+      text-align: left;
+       font-size: 100px;
+      font-weight: 600;
+    }
+
+    
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+      font-size: 30px;
+    }
+    
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+      font-size: 30px;
+    }
+    
+    .section-title {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--light-bg);
+    }
+    
+    .view-more {
+      display: inline-block;
+      margin: 1rem 0 2rem;
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    
+    .view-more:hover {
+      text-decoration: underline;
+    }
+    
+    .add-product-btn {
+      border: 2px dashed #adb5bd;
+      background-color: #f8f9fa;
+      cursor: pointer;
+      transition: all 0.3s;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 2rem 0;
+      border-radius: 10px;
+    }
+    
+    .add-product-btn:hover {
+      background-color: #e9ecef;
+    }
+  

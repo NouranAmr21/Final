@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Comparison</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="./style3.css">
+   <link rel="icon" href="./itiimg/Logo.png" type="image/png">
+</head>
+<body>
+<!-- start nav -->
+<nav class="navbar navbar-expand-lg navbar-light p-3">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="itiimg/Frame 168 (1).png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 me-md-5">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="shop.html">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="cart.html">cart</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#comp.html">compare</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About</a>
+
+  </li>
+ 
+  
+</ul>
+      <div class="nav-icons d-flex gap-4 ms-md-5">
+        <img src="itiimg/mdi_account-alert-outline.png" alt="">
+        <img src="itiimg/Vector (21).png" alt="">
+        <img src="itiimg/akar-icons_heart (1).png" alt="">
+        <img src="itiimg/Vector (22).png" alt="">
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- end nav -->
+
+<!-- HEADER SECTION -->
+<div class="header" style="background-image: url('photos/cover.png');">
+  <div class="header-content py-4">
+    <img src="photos/logo1.png" alt="Logo" style="width: 60px;" class="mb-2">
+    <h1 class="mt-3 fw-bold">Product Comparison</h1>
+   <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Compare</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Product Comparison Section -->
+<div class="container product-comparison-container">
+  <!-- Product Header -->
+  <div class="product-header">
+    <h1>Go to Product page for more Products</h1>
+    <a href="index.html#products" class="view-more">View More</a>
+
+  </div>
+  <div class="container">
+  <div class="row" id="product-list"></div>
+  <button id="compare-btn" class="btn btn-warning mt-3 mb-4">Compare Selected</button>
+  <div id="comparison-result" class="d-flex flex-wrap gap-4"></div>
+</div>
+
+<!-- Scroll to Top Button -->
+<button id="scrollUpBtn" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Font Awesome Icon Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+
+  
+ 
+
+<!-- Features Section -->
+<div class="info py-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+        <img src="./itiimg/trophy 1 (1).png" alt="Quality" style="width: 40px; height: 40px;" class="me-3">
+        <div>
+          <h5 class="mb-1">High Quality</h5>
+          <p class="text-muted mb-0">Crafted from top materials</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+        <img src="./itiimg/guarantee (1).png" alt="Warranty" style="width: 40px; height: 40px;" class="me-3">
+        <div>
+          <h5 class="mb-1">Warranty Protection</h5>
+          <p class="text-muted mb-0">Over 2 years</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+        <img src="./itiimg/shipping (1).png" alt="Shipping" style="width: 40px; height: 40px;" class="me-3">
+        <div>
+          <h5 class="mb-1">Free Shipping</h5>
+          <p class="text-muted mb-0">Order over $150</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-center mb-4 justify-content-md-start justify-content-center">
+        <img src="./itiimg/customer-support (1).png" alt="Support" style="width: 40px; height: 40px;" class="me-3">
+        <div>
+          <h5 class="mb-1">24 / 7 Support</h5>
+          <p class="text-muted mb-0">Dedicated support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-md-start text-center">
+  <div class="container" id="about">
+    <hr class="border border-0 my-5">
+    <div class="row justify-content-center gap-4">
+      <div class="company-name col-md-3">
+        <h2 class="mb-5">Funiro.</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Vivamus hes ndrerit suscipit egestas.</p>
+      </div>
+      <div class="company-links col-md-2">
+        <h4 class="light-color mb-5 text-muted">Links</h4>
+        <ul class="list-unstyled m-0 p-0">
+          <li class="mt-4">Home</li>
+          <li class="mt-3">Shop</li>
+          <li class="mt-3">About</li>
+          <li class="mt-3">Contact</li>
+        </ul>
+      </div>
+      <div class="company-contact col-md-2">
+        <h4 class="mb-5 text-muted">Help</h4>
+        <ul class="list-unstyled m-0 p-0">
+          <li class="mt-4">Payment Options</li>
+          <li class="mt-3">Returns</li>
+          <li class="mt-3">Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="company-follow col-md-4">
+        <h4 class="mb-5 text-muted">Newsletter</h4>
+        <form action="post" class="d-flex justify-content-lg-start justify-content-center">
+          <input type="text" placeholder="Enter Your Email Address" class="border-0 border-bottom">
+          <label for="" class="ms-2 fw-bold">Subscribe</label>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="last">
+  <div class="container">
+    <hr>
+    <p class="py-3 text-lg-start text-center">2023 furino. All rights reverved</p>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById('compare-btn').onclick = function() {
+  const checkboxes = document.querySelectorAll('.compare-checkbox:checked');
+  if (checkboxes.length < 2) {
+    alert('Select at least two products to compare!');
+    return;
+  }
+  // Get product indices
+  const indices = Array.from(checkboxes).map(cb => cb.value);
+  // Use these indices to build the table for selected products
+  // (You'll need your product data as an array in JS)
+};
+</script>
+
+<script>
+// Your products array as before
+const products = [
+  {"name":"Syltherine","desc":"Stylish cafe chair","price":"Rp 2.500.000","oldPrice":"Rp 3.500.000","image":"./images/Images (15).png"},
+  {"name":"Liviosa","desc":"Stylish cafe chair","price":"Rp 4.500.000","oldPrice":"Rp 3.500.000","image":"./images/Images (22).png"},
+  {"name":"Lolito","desc":"Stylish cafe chair","price":"Rp 2.550.000","oldPrice":"Rp 3.500.000","image":"./images/Images (16).png"},
+  {"name":"Respira","desc":"Stylish cafe chair","price":"Rp 7.500.000","oldPrice":"Rp 3.500.000","image":"./images/Images (17).png"},
+  {"name":"Grifo","desc":"Stylish cafe chair","price":"Rp 2.590.000","oldPrice":"Rp 3.500.000","image":"./images/Images (18).png"},
+  {"name":"Muggo","desc":"Stylish cafe chair","price":"Rp 100.500.000","oldPrice":"Rp 3.500.000","image":"./images/Images (19).png"},
+  {"name":"Pinkgy","desc":"Stylish cafe chair","price":"Rp 2.520.000","oldPrice":"Rp 3.500.000","image":"./images/Images (20).png"},
+  {"name":"Potty","desc":"Stylish cafe chair","price":"Rp 21.500.000","oldPrice":"Rp 3.500.000","image":"./images/Images (20).png"}
+];
+
+
+const styles = ['Modern', 'Classic', 'Retro', 'Minimalist'];
+const materials = ['Velvet', 'Wood', 'Metal', 'Plastic'];
+const warranties = ['1 Year', '2 Years', '6 Months'];
+const colors = ['Gray', 'Brown', 'Black', 'Blue'];
+const ratings = ['⭐⭐⭐', '⭐⭐⭐⭐', '⭐⭐⭐⭐⭐'];
+
+function random(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+// Generate random features for each product
+const productsWithFeatures = products.map(p => ({...p,
+  style: random(styles),
+  material: random(materials),
+  warranty: random(warranties),
+  color: random(colors),
+  rating: random(ratings)
+}));
+
+document.getElementById('product-list').innerHTML = productsWithFeatures.map((p, i) => `
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex">
+    <div class="card flex-fill">
+      <img src="${p.image}" class="card-img-top" style="height:140px;object-fit:cover;">
+      <div class="card-body text-center">
+        <h5 class="card-title">${p.name}</h5>
+        <p class="card-text">${p.desc}</p>
+        <small class="text-secondary d-block mb-2">${p.oldPrice}</small>
+        <b class="text-success">${p.price}</b>
+        <div>
+          <input type="checkbox" class="compare-checkbox mt-2" value="${i}" id="compare${i}">
+          <label for="compare${i}">Compare</label>
+        </div>
+      </div>
+    </div>
+  </div>
+`).join('');
+
+
+
+document.getElementById('compare-btn').onclick = function() {
+  const checked = Array.from(document.querySelectorAll('.compare-checkbox:checked')).map(c => productsWithFeatures[c.value]);
+  if (checked.length < 2) {
+    document.getElementById('comparison-result').innerHTML = 
+      `<div class="alert alert-dark w-100">Select at least two products to compare!</div>`;
+    return;
+  }
+  document.getElementById('comparison-result').innerHTML = checked.map(p => `
+    <div class="card shadow p-2" style="min-width:240px;max-width:260px;flex:1;">
+      <img src="${p.image}" class="card-img-top" style="height:130px;object-fit:cover;">
+      <div class="card-body">
+        <h6 class="fw-bold">${p.name}</h6>
+        <div class="text-muted mb-2" style="font-size:15px;">${p.desc}</div>
+        <div><b>Price:</b> <span class="text-success">${p.price}</span></div>
+        <div><b>Old Price:</b> <span class="text-secondary text-decoration-line-through">${p.oldPrice}</span></div>
+        <div><b>Style:</b> ${p.style}</div>
+        <div><b>Material:</b> ${p.material}</div>
+        <div><b>Warranty:</b> ${p.warranty}</div>
+        <div><b>Color:</b> ${p.color}</div>
+        <div><b>Rating:</b> ${p.rating}</div>
+      </div>
+    </div>
+  `).join('');
+};
+
+
+
+
+
+ 
+
+</script>
+
+<script>
+  const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollUpBtn.style.display = "block";
+    } else {
+      scrollUpBtn.style.display = "none";
+    }
+  };
+
+  scrollUpBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
+
+
+</body>
+</html>
